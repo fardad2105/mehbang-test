@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## How To Work
+* after run project you'll see list of employees page that this page contains the list of employees and create employee button 
+and in this table you can edit and delete any employee in any row of table
+
+* in develop mode we show toast message for handle errors and success messages
+* for form error handling have created directive that contain error message handling and type of errors
+

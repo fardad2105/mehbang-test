@@ -1,0 +1,38 @@
+<div class="list-of-employees">
+  <div class="col-12">
+    <div>
+      <a class="btn btn-success mb-5" [routerLink]="['/employee/create']" routerLinkActive="active">Create New
+        Employee</a>
+    </div>
+    <table class="table table-hover">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Age</th>
+        <th scope="col">Img</th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let employee of employees">
+        <th scope="row">{{employee.id}}</th>
+        <td>{{employee.employee_name}}</td>
+        <td>{{employee.employee_salary | currency}}</td>
+        <td>{{employee.employee_age}}</td>
+        <td><img [src]="employee.profile_image" alt="profile-img" srcset=""></td>
+        <td>
+          <button class="btn btn-warning" [routerLink]="['/employee/update', employee.id, ]">Edit <i
+            class="bi bi-pen"></i></button>
+        </td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteEmployee(employee.id)">Delete</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

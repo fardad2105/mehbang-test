@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.header {
+  background: rgb(2,0,36);
+  background: linear-gradient(294deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 0%, rgba(104,115,207,1) 76%);
+  height: 5rem;
+}
+.list-of-employees {
+  margin-top: 50px;
+}
